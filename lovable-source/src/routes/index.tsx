@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { Instagram, Send, MessageCircle, Radio } from "lucide-react";
-import hero from "@/assets/hero.avif";
+import hero from "@/assets/taban-hero.webp";
 import { contacts } from "@/lib/contacts";
 
 const IG = "https://instagram.com/taban_edit";
@@ -48,7 +48,7 @@ function Index() {
       <header className="sticky top-0 z-20 px-4 pt-4">
         <nav className="glass mx-auto flex max-w-6xl items-center justify-between rounded-full px-5 py-3 shadow-soft">
           <a href="#top" className="flex shrink-0 items-center gap-2 font-heading text-lg font-bold">
-            <img src="/assets/header-logo-01.webp" width={56} height={56} alt="نشان تابان ادیت" className="h-11 w-11 shrink-0 object-contain sm:h-14 sm:w-14" />
+            <img src="/assets/taban-logo.png" width={56} height={56} alt="نشان تابان ادیت" className="h-11 w-11 shrink-0 object-contain sm:h-14 sm:w-14" />
             <span className="text-grad">تابان ادیت</span>
           </a>
           <div className="hidden gap-6 text-sm sm:flex">
