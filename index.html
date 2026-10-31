@@ -1,58 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>تابان ادیت | طراحی گرافیک و تدوین ویدیو</title>
-<meta name="description" content="تابان ادیت؛ طراحی بنر و کاور، پروفایل و هویت بصری، تدوین ویدیو و محتوای خلاق. برای مشاوره و سفارش در اینستاگرام، تلگرام، بله و روبیکا پیام بدهید.">
-<meta name="theme-color" content="#fce8f4"><meta property="og:title" content="تابان ادیت | از ایده تا اجرا"><meta property="og:type" content="website"><meta property="og:locale" content="fa_IR"><meta property="og:description" content="تابان ادیت، همراه خلاق شما در طراحی و تدوین. از ایده تا اجرا کنار شماییم.">
-<link rel="icon" type="image/webp" href="./assets/logo.webp">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تابان ادیت | از ایده تا اجرا</title>
+<link rel="icon" href="./assets/logo.webp" type="image/webp">
+<meta name="description" content="تابان ادیت؛ طراحی کاور و بنر، طراحی پروفایل، تدوین ویدیو و تولید محتوای بصری. از ایده تا اجرا.">
+<meta property="og:title" content="تابان ادیت — از ایده تا اجرا">
+<meta property="og:description" content="طراحی کاور و بنر، پروفایل، تدوین ویدیو و محتوای بصری با حس و حال خاص.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fa_IR">
+<meta name="twitter:card" content="summary_large_image">
+
 <style>
-@font-face{font-family:Kalameh;src:local("Kalameh Bold"),local("Kalameh");font-display:swap;font-weight:700 900}
-@font-face{font-family:Doran;src:local("Doran Bold"),local("Doran");font-display:swap;font-weight:400 900}
-:root{--ink:#392448;--purple:#7533a6;--pink:#db398e;--muted:#7c6686;--shadow:0 22px 65px rgba(95,43,115,.12);--outline:rgba(173,100,168,.20)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Doran,Tahoma,sans-serif;background:#fff7fc;background-image:radial-gradient(ellipse at 8% 10%,rgba(252,183,219,.63),transparent 39%),radial-gradient(ellipse at 95% 35%,rgba(213,173,247,.50),transparent 39%),radial-gradient(ellipse at 40% 100%,rgba(253,210,234,.52),transparent 49%);background-attachment:fixed;line-height:1.9}a{text-decoration:none;color:inherit}button,a{-webkit-tap-highlight-color:transparent}h1,h2,h3,.brand,.large-title{font-family:Kalameh,Tahoma,sans-serif;line-height:1.45}h1,h2,h3,p{margin-top:0}.layout{max-width:1170px;margin:auto;padding:0 25px}.soft{border:1px solid var(--outline);border-radius:28px;box-shadow:var(--shadow);background:rgba(255,255,255,.78);backdrop-filter:blur(15px)}.gradient{background:linear-gradient(115deg,#de408f,#8737b1);color:white}.gradient-text{background:linear-gradient(120deg,#dc3586 25%,#7431a3 87%);color:transparent;background-clip:text;-webkit-background-clip:text}.star{color:#e35aad;font-size:26px}
-.top{padding-top:20px;position:relative;z-index:2}.nav{display:flex;align-items:center;justify-content:space-between;padding:10px 21px;border-radius:24px;min-height:76px}.brand{display:flex;align-items:center;gap:11px;font-size:23px;font-weight:900}.brand-logo{width:49px;height:49px;object-fit:cover;border-radius:15px;border:1px solid #f4d6eb;background:#fff}.menu{display:flex;align-items:center;gap:32px;font-size:15px}.menu a:hover{color:var(--pink)}.btn{font-family:Doran,Tahoma,sans-serif;font-size:15px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 22px;border-radius:17px;transition:transform .25s,box-shadow .25s}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 27px rgba(143,47,147,.18)}.btn:focus-visible,a:focus-visible{outline:3px solid #933bbb;outline-offset:3px}.btn.outline{border:1px solid #e9c9e7;background:#fff;color:#7431a3}.btn.small{font-size:13px;padding:9px 18px}
-.hero{display:grid;grid-template-columns:.85fr 1.15fr;align-items:center;gap:40px;padding-top:68px;padding-bottom:82px}.intro{position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:7px;background:#fff;padding:5px 16px;border:1px solid #f2d3e7;border-radius:40px;color:#9c4c96;font-size:13px}.hero h1{font-size:clamp(44px,5vw,76px);letter-spacing:-1px;margin:16px 0}.hero p{font-size:19px;color:#67546e;line-height:2.15;max-width:540px}.btn-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.mini-trust{margin-top:32px;display:flex;align-items:center;gap:12px;font-size:13px;color:#826b89}.mini-trust i{width:9px;height:9px;border-radius:50%;background:#e85da3;box-shadow:0 0 0 5px #fbe0f0}.hero-art{position:relative;isolation:isolate}.hero-art:before{content:'';position:absolute;z-index:-1;inset:35px;background:linear-gradient(125deg,#f7bce1,#c7a6eb);filter:blur(55px);opacity:.7}.hero-art img{display:block;max-width:100%;width:100%;object-fit:cover;aspect-ratio:2048/1408;border-radius:31px;box-shadow:0 25px 70px rgba(117,48,131,.26);border:7px solid rgba(255,255,255,.85)}.float-icon{position:absolute;bottom:-25px;left:-12px;background:#fff;border:1px solid #edcce7;padding:13px 17px;border-radius:20px;font-size:13px;box-shadow:var(--shadow);color:#80408f}.float-icon span{font-size:22px;vertical-align:middle;margin-left:6px}
-.services{padding-top:40px;padding-bottom:96px}.section-head{text-align:center;margin-bottom:42px}.section-head h2{font-size:clamp(32px,4vw,48px);margin:4px 0 10px}.section-head p{color:var(--muted);font-size:16px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.service{padding:27px 23px;min-height:245px;transition:transform .25s}.service:hover{transform:translateY(-6px)}.service .symbol{width:55px;height:55px;display:grid;place-items:center;font-size:27px;border-radius:18px;background:linear-gradient(145deg,#ffd2ea,#dfd1f7)}.service h3{font-size:21px;margin:19px 0 8px}.service p{font-size:14px;color:#79647e;margin:0;line-height:2.1}
-.about{margin-bottom:95px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:40px}.about h2{font-size:30px;margin-bottom:12px}.about p{color:#6c5672;font-size:16px;max-width:730px;margin:0}.about-badge{flex-shrink:0;display:grid;place-items:center;border-radius:25px;width:115px;height:115px;background:linear-gradient(130deg,#fbd3e9,#e5d5ff);font-size:48px}
-.contact-block{padding-bottom:100px;scroll-margin-top:30px}.contact{padding:49px 40px;text-align:center;border-radius:40px;position:relative;overflow:hidden}.contact:before,.contact:after{content:'✦';position:absolute;color:#eac0df;font-size:38px;top:18px}.contact:before{right:35px}.contact:after{left:35px}.contact h2{font-size:clamp(31px,4vw,44px);margin-bottom:7px}.contact p{color:var(--muted);margin:0 0 29px}.socials{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.social{display:flex;align-items:center;justify-content:center;gap:10px;border-radius:19px;min-height:68px;padding:13px 10px;font-weight:700;font-size:16px;background:white;border:1px solid #eacbe5;transition:transform .25s,box-shadow .25s}.social:hover{transform:translateY(-4px);box-shadow:0 10px 22px rgba(96,44,111,.13)}.social-icon{display:inline-grid;place-items:center;flex-shrink:0;width:35px;height:35px;border-radius:12px;font-size:21px;color:white}.instagram{background:linear-gradient(135deg,#ffb262,#ed488a,#8841b6)}.bale{background:#39a6b5}.rubika{background:linear-gradient(135deg,#8f69e9,#bd3e97)}.telegram{background:#26a5dc}footer{text-align:center;color:#907c96;padding:0 20px 35px;font-size:13px}
-@media(max-width:950px){.hero{gap:25px}.cards{grid-template-columns:repeat(2,1fr)}.socials{grid-template-columns:repeat(2,1fr)}.about-badge{width:90px;height:90px}.hero p{font-size:16px}}
-@media(max-width:690px){.layout{padding:0 17px}.nav{min-height:67px;padding:8px 12px}.brand{font-size:19px;gap:7px}.brand-logo{width:43px;height:43px}.menu{display:none}.btn.small{padding:9px 12px;font-size:12px}.hero{display:flex;flex-direction:column;padding-top:48px;padding-bottom:65px;gap:29px}.intro{text-align:center;order:1}.hero-art{order:2;width:100%}.hero h1{font-size:53px;margin:12px 0}.hero p{font-size:16px}.btn-row{justify-content:center}.mini-trust{justify-content:center}.hero-art img{border-width:5px;border-radius:23px}.float-icon{bottom:-17px;left:6px;font-size:12px;padding:8px 12px;border-radius:12px}.services{padding-top:15px;padding-bottom:65px}.section-head{margin-bottom:25px}.section-head p{font-size:14px}.cards{gap:12px}.service{min-height:205px;padding:20px 17px;border-radius:22px}.service .symbol{width:49px;height:49px;font-size:24px}.service h3{font-size:19px}.service p{font-size:13px}.about{padding:26px 20px;margin-bottom:65px;gap:15px}.about h2{font-size:25px}.about p{font-size:14px}.about-badge{width:65px;height:65px;font-size:30px;border-radius:18px}.contact-block{padding-bottom:60px}.contact{padding:39px 21px;border-radius:26px}.contact:before,.contact:after{font-size:19px}.socials{gap:11px}.social{min-height:66px;font-size:14px}.social-icon{width:32px;height:32px}.contact p{font-size:14px}}
-@media(max-width:380px){.service h3{font-size:17px}.service{padding:16px 12px}.about-badge{display:none}.hero h1{font-size:47px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@font-face{font-family:"Doran";src:url("./fonts/Doran-Bold.woff2") format("woff2");font-style:normal;font-weight:700 900;font-display:swap}
+@font-face{font-family:"Kalameh";src:url("./fonts/Kalameh-Bold.woff2") format("woff2");font-style:normal;font-weight:400 900;font-display:swap}
+:root{
+  --bg:oklch(0.975 0.015 330);--fg:oklch(0.28 0.09 305);--card:oklch(0.99 0.01 330 / 70%);
+  --primary:oklch(0.58 0.2 315);--on-primary:oklch(0.99 0.01 330);--secondary:oklch(0.92 0.05 320);
+  --muted:oklch(0.94 0.03 320);--muted-fg:oklch(0.5 0.07 305);--accent:oklch(0.8 0.12 350);--border:oklch(0.88 0.05 320);
+  --grad:linear-gradient(135deg,oklch(0.7 0.18 350),oklch(0.55 0.2 300));
+  --shadow:0 20px 50px -20px oklch(0.55 0.2 310 / 40%);
+  --font-body:"Kalameh",system-ui,sans-serif;
+  --font-head:"Doran",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--fg);background:var(--bg);overflow-x:hidden;
+  background-image:radial-gradient(circle at 20% 20%,oklch(0.9 0.08 350) 0%,transparent 45%),radial-gradient(circle at 80% 30%,oklch(0.85 0.1 300) 0%,transparent 45%),radial-gradient(circle at 50% 90%,oklch(0.92 0.06 320) 0%,transparent 50%);background-attachment:fixed}
+h1,h2,h3,.brand{font-family:var(--font-head)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:72rem;margin:0 auto;padding:0 1.25rem}
+.glass{background:var(--card);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--border)}
+.grad{background:var(--grad);color:var(--on-primary)}
+.tgrad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.shadow{box-shadow:var(--shadow)}
+header{position:sticky;top:0;z-index:20;padding:1rem 1rem 0}
+nav{max-width:72rem;margin:0 auto;display:flex;align-items:center;justify-content:space-between;border-radius:999px;padding:.75rem 1.25rem}
+.brand{font-size:1.125rem;font-weight:800}
+.links{display:none;gap:1.5rem;font-size:.875rem}.links a:hover{color:var(--primary)}
+.btn{display:inline-block;border-radius:999px;padding:.75rem 1.5rem;font-weight:600;transition:transform .3s}
+.btn:hover{transform:translateY(-4px)}
+.btn-sm{padding:.5rem 1rem;font-size:.875rem}.btn-sm:hover{transform:scale(1.05)}
+.hero{display:grid;gap:2.5rem;align-items:center;padding:3.5rem 1.25rem;text-align:center}
+.pill{display:inline-block;border-radius:999px;padding:.25rem 1rem;font-size:.875rem;color:var(--muted-fg)}
+h1{margin-top:1.25rem;font-size:3rem;font-weight:800;line-height:1.25}
+.lead{margin-top:1.25rem;font-size:1.125rem;line-height:2rem;color:var(--muted-fg)}
+.cta{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center}
+.art{position:relative}
+.art .glow{position:absolute;inset:1.5rem;border-radius:3rem;opacity:.4;filter:blur(48px);background:var(--grad)}
+.art img{position:relative;width:100%;height:auto;border-radius:2.5rem;box-shadow:var(--shadow);animation:float 6s ease-in-out infinite;display:block}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+section.block{padding:4rem 1.25rem}
+h2{text-align:center;font-size:1.875rem;font-weight:800}
+.sub{margin-top:.75rem;text-align:center;color:var(--muted-fg)}
+.grid{margin-top:2.5rem;display:grid;gap:1.25rem}
+.svc{border-radius:1.5rem;padding:1.5rem;transition:transform .3s}
+.svc:hover{transform:translateY(-8px)}
+.ico{display:grid;place-items:center;width:3.5rem;height:3.5rem;border-radius:1rem;font-size:1.5rem}
+h3{margin-top:1.25rem;font-size:1.25rem;font-weight:700}
+.svc p{margin-top:.5rem;line-height:1.75rem;color:var(--muted-fg)}
+.works{grid-template-columns:repeat(2,1fr);gap:1rem}
+.work{border-radius:1.5rem;overflow:hidden}
+.thumb{position:relative;aspect-ratio:1;transition:transform .5s}
+.work:hover .thumb{transform:scale(1.05)}
+.tag{position:absolute;right:.75rem;top:.75rem;border-radius:999px;padding:.25rem .75rem;font-size:.75rem;font-weight:600}
+.work p{padding:1rem;font-size:.875rem;font-weight:600;position:relative;background:var(--card)}
+.g1{background:linear-gradient(to bottom right,var(--accent),var(--primary))}
+.g2{background:linear-gradient(to bottom right,var(--primary),var(--secondary))}
+.g3{background:linear-gradient(to bottom right,var(--secondary),var(--accent))}
+.g4{background:linear-gradient(to bottom right,var(--accent),var(--secondary))}
+.g5{background:linear-gradient(to bottom right,var(--primary),var(--accent))}
+.g6{background:linear-gradient(to bottom right,var(--secondary),var(--primary))}
+.contact{max-width:56rem;margin:0 auto;border-radius:2.5rem;padding:2rem;text-align:center}
+.two{margin-top:2rem;display:grid;gap:.75rem}
+.big{border-radius:1rem;padding:1rem 1.5rem;font-weight:700;transition:transform .3s;display:block}
+.big:hover{transform:translateY(-4px)}
+.outline{border:2px solid var(--primary);color:var(--primary)}
+.soon{margin-top:1.5rem;display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}
+.soon div{border-radius:1rem;background:var(--muted);padding:.75rem;font-size:.875rem;color:var(--muted-fg)}
+.soon span{display:block;font-size:.75rem}
+footer{padding-bottom:2rem;text-align:center;font-size:.875rem;color:var(--muted-fg)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media(min-width:640px){.links{display:flex}.grid{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr 1fr}}
+@media(min-width:768px){.hero{grid-template-columns:1fr 1fr;padding:6rem 1.25rem;text-align:right}.cta{justify-content:flex-start}h1{font-size:4.5rem}h2{font-size:2.25rem}.works{grid-template-columns:repeat(3,1fr)}.work p{font-size:1rem}.contact{padding:3rem}}
+@media(min-width:1024px){.svcs{grid-template-columns:repeat(4,1fr)}}
+@media(prefers-reduced-motion:reduce){.art img{animation:none}.reveal{opacity:1;transform:none;transition:none}}
+
+.brand{display:inline-flex;gap:.5rem;align-items:center}
+.brand-logo{display:block;width:44px;height:44px;object-fit:contain;flex-shrink:0}
+.social-links{display:grid;grid-template-columns:1fr;gap:.75rem;margin:2rem 0 1.5rem}
+.social{display:flex;justify-content:center;align-items:center;gap:.65rem;border-radius:1rem;border:2px solid currentColor;padding:1rem 1.5rem;background:var(--card);font-weight:700;transition:transform .3s}
+.social:hover{transform:translateY(-4px)}
+.social span{font-size:1.35rem}
+.instagram{color:oklch(.53 .19 350)}.bale{color:oklch(.43 .12 160)}.rubika{color:oklch(.51 .18 310)}.telegram{color:oklch(.48 .12 235)}
+.dm{display:inline-flex;align-items:center;justify-content:center;max-width:100%;border-radius:1rem;padding:1rem 1.5rem;font-weight:700;transition:transform .3s}
+.dm:hover{transform:translateY(-4px)}
+.art img{aspect-ratio:1;object-fit:cover}
+@media(min-width:640px){.social-links{grid-template-columns:1fr 1fr}.brand-logo{width:56px;height:56px}}
 </style>
 </head>
 <body>
-<header class="top layout" id="top"><nav class="nav soft" aria-label="منوی اصلی">
-  <a class="brand" href="#top"><img src="./assets/logo.webp" alt="لوگوی تابان ادیت" class="brand-logo" width="49" height="49"><span class="gradient-text">تابان ادیت</span></a>
-  <div class="menu"><a href="#services">خدمات ما</a><a href="#about">درباره تابان</a><a href="#contact">ارتباط با ما</a></div>
-  <a class="btn small gradient" href="#contact">ثبت سفارش <span aria-hidden="true">↗</span></a>
+<header><nav class="glass shadow">
+  <a href="#top" class="brand tgrad"><img src="./assets/logo.webp" width="56" height="56" alt="نشان تابان ادیت" class="brand-logo">تابان ادیت</a>
+  <div class="links"><a href="#services">خدمات</a><a href="#contact">ارتباط</a></div>
+  <a href="#contact" class="btn btn-sm grad">ارتباط با ما</a>
 </nav></header>
-<main>
-<section class="hero layout" aria-labelledby="hero-title">
- <div class="intro"><span class="eyebrow"><span class="star" aria-hidden="true">✦</span> استودیو خلاق طراحی و تدوین</span>
-  <h1 id="hero-title">از ایده <span class="gradient-text">تا اجرا</span></h1>
-  <p>هر برند یک قصه داره؛ ما قصه‌ی تو رو با طراحی خلاق، رنگ‌های چشم‌نواز و تدوین حرفه‌ای به تصویر می‌کشیم.</p>
-  <div class="btn-row"><a class="btn gradient" href="#contact">سفارش طراحی و تدوین <span aria-hidden="true">↗</span></a><a class="btn outline" href="#services">دیدن خدمات</a></div>
-  <div class="mini-trust"><i aria-hidden="true"></i> طراحی اختصاصی، با عشق به جزئیات</div>
- </div>
- <div class="hero-art"><img src="./assets/hero.avif" alt="شخصیت طراح تابان ادیت در استودیو صورتی و بنفش کنار مانیتور و لپ‌تاپ" width="1200" height="825" fetchpriority="high"><div class="float-icon"><span aria-hidden="true">🎨</span> ایده‌های خاص، اجراهای متفاوت</div></div>
-</section>
-<section class="services layout" id="services"><div class="section-head"><span class="star" aria-hidden="true">✦</span><h2>خدمات <span class="gradient-text">تابان ادیت</span></h2><p>از یک کاور جذاب تا ویدیویی که مخاطب نتونه ازش چشم برداره</p></div>
- <div class="cards">
- <article class="service soft"><div class="symbol" aria-hidden="true">🖼️</div><h3>طراحی کاور و بنر</h3><p>بنر تبلیغاتی، کاور پست و استوری متناسب با حال‌وهوای برندت.</p></article>
- <article class="service soft"><div class="symbol" aria-hidden="true">🎨</div><h3>طراحی پروفایل</h3><p>طراحی خلاقانه‌ی پروفایل و عناصر بصری برای یک پیج متفاوت.</p></article>
- <article class="service soft"><div class="symbol" aria-hidden="true">🎬</div><h3>تدوین ویدیو</h3><p>تدوین ریلز و ویدیو با ریتم جذاب، جزئیات دقیق و حس حرفه‌ای.</p></article>
- <article class="service soft"><div class="symbol" aria-hidden="true">✨</div><h3>تولید محتوای بصری</h3><p>خلق محتوای چشم‌نواز برای معرفی بهتر کسب‌وکار و داستان تو.</p></article>
- </div>
-</section>
-<section class="about layout" id="about"><div class="about-badge" aria-hidden="true">💜</div><div><h2>اینجا ایده‌هات <span class="gradient-text">جان می‌گیرن</span></h2><p>ما در تابان ادیت کمک می‌کنیم هویت تصویری کسب‌وکارت حرفه‌ای‌تر و دوست‌داشتنی‌تر دیده بشه. تو فقط ایده‌ات رو بگو؛ با هم به بهترین شکل اجراش می‌کنیم.</p></div></section>
-<section class="contact-block layout" id="contact"><div class="contact soft"><h2>بیا با هم <span class="gradient-text">شروع کنیم!</span></h2><p>برای مشاوره و ثبت سفارش، از یکی از راه‌های زیر بهمون پیام بده.</p>
-<div class="socials">
-<a class="social" href="https://instagram.com/taban_edit" target="_blank" rel="noopener noreferrer" aria-label="ارتباط در اینستاگرام تابان ادیت"><span class="social-icon instagram" aria-hidden="true">◎</span> اینستاگرام <span aria-hidden="true">↗</span></a>
-<a class="social" href="https://ble.ir/tabanedit" target="_blank" rel="noopener noreferrer" aria-label="ارتباط در بله تابان ادیت"><span class="social-icon bale" aria-hidden="true">✉</span> بله <span aria-hidden="true">↗</span></a>
-<a class="social" href="https://rubika.ir/page/Taban_edit" target="_blank" rel="noopener noreferrer" aria-label="ارتباط در روبیکا تابان ادیت"><span class="social-icon rubika" aria-hidden="true">✦</span> روبیکا <span aria-hidden="true">↗</span></a>
-<a class="social" href="https://t.me/taban_edit" target="_blank" rel="noopener noreferrer" aria-label="ارتباط در تلگرام تابان ادیت"><span class="social-icon telegram" aria-hidden="true">➤</span> تلگرام <span aria-hidden="true">↗</span></a>
-</div></div></section>
-</main><footer>ساخته شده با <span aria-hidden="true">♥</span> برای تابان ادیت | ۲۰۲۶</footer>
-</body></html>
+<main id="top">
+  <section class="hero wrap">
+    <div class="reveal">
+      <span class="pill glass">استودیو طراحی و تدوین ✿</span>
+      <h1>از ایده <span class="tgrad">تا اجرا</span></h1>
+      <p class="lead">طراحی کاور، پروفایل، تدوین ویدیو و محتوای بصری؛ با رنگ، حس و جزئیاتی که پیجت را خاص می‌کند.</p>
+      <div class="cta">
+        <a href="https://www.instagram.com/taban_edit/" target="_blank" rel="noopener noreferrer" class="btn grad shadow">اینستاگرام تابان ادیت</a>
+        <a href="#contact" class="btn glass">راه‌های ارتباطی</a>
+      </div>
+    </div>
+    <div class="art reveal"><div class="glow"></div><img src="./assets/hero.avif" width="1024" height="1024" alt="طراح گرافیک کارتونی پشت میز کار"></div>
+  </section>
+
+  <section id="services" class="block wrap">
+    <h2 class="reveal">خدمات <span class="tgrad">تابان</span></h2>
+    <div class="grid svcs">
+      <article class="svc glass shadow reveal"><div class="ico grad">🖼️</div><h3>طراحی کاور و بنر</h3><p>کاور پست، هایلایت و بنرهای چشم‌نواز برای دیده شدن برندت.</p></article>
+      <article class="svc glass shadow reveal" style="transition-delay:90ms"><div class="ico grad">🌸</div><h3>طراحی پروفایل</h3><p>پروفایل یکدست و حرفه‌ای که هویت پیجت را می‌سازد.</p></article>
+      <article class="svc glass shadow reveal" style="transition-delay:180ms"><div class="ico grad">🎬</div><h3>تدوین ویدیو</h3><p>ریلز و ویدیوهای جذاب با ریتم، افکت و زیرنویس دقیق.</p></article>
+      <article class="svc glass shadow reveal" style="transition-delay:270ms"><div class="ico grad">✨</div><h3>تولید محتوای بصری</h3><p>ایده‌پردازی و ساخت محتوای تصویری هماهنگ با سبک تو.</p></article>
+    </div>
+  </section>
+
+  <section id="contact" class="block">
+    <div class="contact glass shadow reveal">
+      <h2>بیا با هم <span class="tgrad">بسازیم</span></h2>
+      <p class="sub">برای سفارش و مشاوره از راه‌های ارتباطی زیر پیام بده.</p>
+      <div class="social-links" aria-label="راه‌های ارتباطی">
+        <a class="social instagram" href="https://instagram.com/taban_edit" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">◎</span> اینستاگرام</a>
+        <a class="social bale" href="https://ble.ir/tabanedit" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">✉</span> بله</a>
+        <a class="social rubika" href="https://rubika.ir/page/Taban_edit" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">◈</span> روبیکا</a>
+        <a class="social telegram" href="https://t.me/taban_edit" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">➤</span> تلگرام</a>
+      </div>
+      <a class="dm grad shadow" href="https://ig.me/m/taban_edit" target="_blank" rel="noopener noreferrer">💌 پیام مستقیم اینستاگرام</a>
+    </div>
+  </section>
+</main>
+<footer>© تابان ادیت — از ایده تا اجرا</footer>
+<script>
+(function(){var els=document.querySelectorAll('.reveal');
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.15});
+els.forEach(function(e){io.observe(e)})})();
+</script>
+</body>
+</html>
