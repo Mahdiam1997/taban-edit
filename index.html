@@ -13,18 +13,15 @@
 <meta name="theme-color" content="#F8E4F4"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap">
 <style>
-/* Licensed fonts: add WOFF2 files to ./fonts/ then uncomment.
-@font-face{font-family:"Kalameh";src:url("./fonts/Kalameh-Bold.woff2") format("woff2");font-weight:700 900;font-display:swap}
-@font-face{font-family:"Yekan Bakh";src:url("./fonts/YekanBakh-Regular.woff2") format("woff2");font-weight:400;font-display:swap}
-@font-face{font-family:"Yekan Bakh";src:url("./fonts/YekanBakh-Bold.woff2") format("woff2");font-weight:700;font-display:swap}
-*/
+@font-face{font-family:"Kalameh";src:url("./assets/kalameh.woff2") format("woff2");font-weight:700 900;font-display:swap}
+@font-face{font-family:"Doran";src:url("./assets/doran.woff2") format("woff2");font-weight:400 900;font-display:swap}
 :root{
   --bg:oklch(0.975 0.015 330);--fg:oklch(0.28 0.09 305);--card:oklch(0.99 0.01 330 / 70%);
   --primary:oklch(0.58 0.2 315);--on-primary:oklch(0.99 0.01 330);--secondary:oklch(0.92 0.05 320);
   --muted:oklch(0.94 0.03 320);--muted-fg:oklch(0.5 0.07 305);--accent:oklch(0.8 0.12 350);--border:oklch(0.88 0.05 320);
   --grad:linear-gradient(135deg,oklch(0.7 0.18 350),oklch(0.55 0.2 300));
   --shadow:0 20px 50px -20px oklch(0.55 0.2 310 / 40%);
-  --font-body:"Yekan Bakh","YekanBakh","Vazirmatn",system-ui,sans-serif;
+  --font-body:"Doran","Vazirmatn",system-ui,sans-serif;
   --font-head:"Kalameh","Vazirmatn",system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -90,13 +87,19 @@ footer{padding-bottom:2rem;text-align:center;font-size:.875rem;color:var(--muted
 @media(min-width:768px){.hero{grid-template-columns:1fr 1fr;padding:6rem 1.25rem;text-align:right}.cta{justify-content:flex-start}h1{font-size:4.5rem}h2{font-size:2.25rem}.works{grid-template-columns:repeat(3,1fr)}.work p{font-size:1rem}.contact{padding:3rem}}
 @media(min-width:1024px){.svcs{grid-template-columns:repeat(4,1fr)}}
 @media(prefers-reduced-motion:reduce){.art img{animation:none}.reveal{opacity:1;transform:none;transition:none}}
+
+.brand-image{display:inline-block;vertical-align:middle;object-fit:cover;border-radius:13px;margin-left:9px}
+.hero{gap:3rem}.art img{aspect-ratio:2048/1408;object-fit:cover;background:#f4cde9;border:6px solid rgba(255,255,255,.8)}
+.social-grid{grid-template-columns:repeat(2,1fr);gap:12px}.social{display:block;text-align:center;padding:12px 10px;border-radius:14px;background:white;color:#634278;font-weight:800;border:1px solid #ecd3e7;transition:transform .2s}.social:hover{transform:translateY(-3px);box-shadow:0 10px 20px #a54e9c2b}.social.instagram{background:linear-gradient(120deg,#e965a5,#8c49ad);color:#fff}.social.bale{color:#25889d}.social.rubika{color:#914cb8}.social.telegram{color:#2298c6}
+@media(min-width:640px){.social-grid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:630px){.brand-image{height:38px;width:38px}.hero{gap:2rem}.art img{border-radius:22px}}
 </style>
 </head>
 <body>
 <header><nav class="glass shadow">
-  <a href="#top" class="brand tgrad">تابان ادیت</a>
-  <div class="links"><a href="#services">خدمات</a><a href="#works">نمونه‌ها</a><a href="#contact">ارتباط</a></div>
-  <a href="https://ig.me/m/taban_edit" target="_blank" rel="noopener noreferrer" class="btn btn-sm grad">پیام بده</a>
+  <a href="#top" class="brand tgrad"><img class="brand-image" src="./assets/logo.webp" onerror="this.style.display='none'" alt="لوگوی تابان ادیت" width="49" height="49">تابان ادیت</a>
+  <div class="links"><a href="#services">خدمات</a><a href="#contact">راه‌های ارتباطی</a></div>
+  <a href="#contact" class="btn btn-sm grad">ارتباط با تابان</a>
 </nav></header>
 <main id="top">
   <section class="hero wrap">
@@ -105,11 +108,11 @@ footer{padding-bottom:2rem;text-align:center;font-size:.875rem;color:var(--muted
       <h1>از ایده <span class="tgrad">تا اجرا</span></h1>
       <p class="lead">طراحی کاور، پروفایل، تدوین ویدیو و محتوای بصری؛ با رنگ، حس و جزئیاتی که پیجت را خاص می‌کند.</p>
       <div class="cta">
-        <a href="https://www.instagram.com/taban_edit/" target="_blank" rel="noopener noreferrer" class="btn grad shadow">اینستاگرام تابان ادیت</a>
-        <a href="#services" class="btn glass">خدمات</a>
+        <a href="#contact" class="btn grad shadow">راه‌های ثبت سفارش</a>
+        <a href="#services" class="btn glass">خدمات ما</a>
       </div>
     </div>
-    <div class="art reveal"><div class="glow"></div><img src="./hero.svg" width="1000" height="680" alt="طراح گرافیک کارتونی پشت میز کار"></div>
+    <div class="art reveal"><div class="glow"></div><img src="./assets/hero.webp" onerror="this.onerror=null;this.src='./hero.svg'" width="1200" height="825" alt="تصویر اختصاصی برند تابان ادیت از طراح پشت میز تدوین و گرافیک"></div>
   </section>
 
   <section id="services" class="block wrap">
@@ -122,34 +125,21 @@ footer{padding-bottom:2rem;text-align:center;font-size:.875rem;color:var(--muted
     </div>
   </section>
 
-  <section id="works" class="block wrap">
-    <h2 class="reveal">نمونه‌کارها</h2>
-    <p class="sub reveal">کارت‌های زیر صرفاً طرح نمایشی هستند؛ نمونه‌های واقعی را در اینستاگرام ببینید.</p>
-    <div class="grid works">
-      <div class="work glass shadow reveal"><div class="thumb g1"><span class="tag glass">طرح نمایشی</span></div><p>کاور هایلایت فروشگاهی</p></div>
-      <div class="work glass shadow reveal"><div class="thumb g2"><span class="tag glass">طرح نمایشی</span></div><p>بنر کمپین تخفیف</p></div>
-      <div class="work glass shadow reveal"><div class="thumb g3"><span class="tag glass">طرح نمایشی</span></div><p>ریلز معرفی محصول</p></div>
-      <div class="work glass shadow reveal"><div class="thumb g4"><span class="tag glass">طرح نمایشی</span></div><p>ست پروفایل برند</p></div>
-      <div class="work glass shadow reveal"><div class="thumb g5"><span class="tag glass">طرح نمایشی</span></div><p>پوستر رویداد</p></div>
-      <div class="work glass shadow reveal"><div class="thumb g6"><span class="tag glass">طرح نمایشی</span></div><p>قالب استوری</p></div>
-    </div>
-  </section>
-
   <section id="contact" class="block">
     <div class="contact glass shadow reveal">
-      <h2>بیا با هم <span class="tgrad">بسازیم</span></h2>
-      <p class="sub">برای سفارش و مشاوره در اینستاگرام پیام بده.</p>
+      <h2>بیا با هم <span class="tgrad">شروع کنیم!</span></h2>
+      <p class="sub">برای سفارش و مشاوره از طریق اینستاگرام، بله، روبیکا و تلگرام پیام بده.</p>
       <div class="two">
-        <a href="https://ig.me/m/taban_edit" target="_blank" rel="noopener noreferrer" class="big grad">💌 پیام مستقیم اینستاگرام</a>
-        <a href="https://www.instagram.com/taban_edit/" target="_blank" rel="noopener noreferrer" class="big outline">📸 ‎@taban_edit</a>
+        <a href="https://instagram.com/taban_edit" target="_blank" rel="noopener noreferrer" class="big grad">💌 پیام در اینستاگرام</a>
+        <a href="https://t.me/taban_edit" target="_blank" rel="noopener noreferrer" class="big outline">✈️ گفت‌وگو در تلگرام</a>
       </div>
-      <div class="soon">
-        <div aria-disabled="true">تلگرام <span>به‌زودی</span></div>
-        <div aria-disabled="true">واتساپ <span>به‌زودی</span></div>
-        <div aria-disabled="true">بله <span>به‌زودی</span></div>
-      </div>
-    </div>
-  </section>
+      <div class="soon social-grid">
+    <a href="https://instagram.com/taban_edit" target="_blank" rel="noopener noreferrer" class="social instagram">◎ اینستاگرام ↗</a>
+    <a href="https://ble.ir/tabanedit" target="_blank" rel="noopener noreferrer" class="social bale">✉ بله ↗</a>
+    <a href="https://rubika.ir/page/Taban_edit" target="_blank" rel="noopener noreferrer" class="social rubika">✦ روبیکا ↗</a>
+    <a href="https://t.me/taban_edit" target="_blank" rel="noopener noreferrer" class="social telegram">➤ تلگرام ↗</a>
+  </div>
+  </div></section>
 </main>
 <footer>© تابان ادیت — از ایده تا اجرا</footer>
 <script>
