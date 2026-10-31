@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { Instagram, Send, MessageCircle, Radio } from "lucide-react";
-import hero from "@/assets/hero.jpg";
+import hero from "@/assets/hero.avif";
 import { contacts } from "@/lib/contacts";
 
 const IG = "https://instagram.com/taban_edit";
