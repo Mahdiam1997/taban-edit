@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تابان ادیت | طراحی کاور، پروفایل و تدوین ویدیو</title>
+<meta name="description" content="تابان ادیت؛ طراحی کاور و بنر، طراحی پروفایل، تدوین ویدیو و تولید محتوای بصری. از ایده تا اجرا.">
+<meta property="og:title" content="تابان ادیت — از ایده تا اجرا">
+<meta property="og:description" content="طراحی کاور و بنر، پروفایل، تدوین ویدیو و محتوای بصری با حس و حال خاص.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fa_IR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap">
+<style>
+/* Licensed fonts: add WOFF2 files to ./fonts/ then uncomment.
+@font-face{font-family:"Kalameh";src:url("./fonts/Kalameh-Bold.woff2") format("woff2");font-weight:700 900;font-display:swap}
+@font-face{font-family:"Yekan Bakh";src:url("./fonts/YekanBakh-Regular.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Yekan Bakh";src:url("./fonts/YekanBakh-Bold.woff2") format("woff2");font-weight:700;font-display:swap}
+*/
+:root{
+  --bg:oklch(0.975 0.015 330);--fg:oklch(0.28 0.09 305);--card:oklch(0.99 0.01 330 / 70%);
+  --primary:oklch(0.58 0.2 315);--on-primary:oklch(0.99 0.01 330);--secondary:oklch(0.92 0.05 320);
+  --muted:oklch(0.94 0.03 320);--muted-fg:oklch(0.5 0.07 305);--accent:oklch(0.8 0.12 350);--border:oklch(0.88 0.05 320);
+  --grad:linear-gradient(135deg,oklch(0.7 0.18 350),oklch(0.55 0.2 300));
+  --shadow:0 20px 50px -20px oklch(0.55 0.2 310 / 40%);
+  --font-body:"Yekan Bakh","YekanBakh","Vazirmatn",system-ui,sans-serif;
+  --font-head:"Kalameh","Vazirmatn",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--fg);background:var(--bg);overflow-x:hidden;
+  background-image:radial-gradient(circle at 20% 20%,oklch(0.9 0.08 350) 0%,transparent 45%),radial-gradient(circle at 80% 30%,oklch(0.85 0.1 300) 0%,transparent 45%),radial-gradient(circle at 50% 90%,oklch(0.92 0.06 320) 0%,transparent 50%);background-attachment:fixed}
+h1,h2,h3,.brand{font-family:var(--font-head)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:72rem;margin:0 auto;padding:0 1.25rem}
+.glass{background:var(--card);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--border)}
+.grad{background:var(--grad);color:var(--on-primary)}
+.tgrad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.shadow{box-shadow:var(--shadow)}
+header{position:sticky;top:0;z-index:20;padding:1rem 1rem 0}
+nav{max-width:72rem;margin:0 auto;display:flex;align-items:center;justify-content:space-between;border-radius:999px;padding:.75rem 1.25rem}
+.brand{font-size:1.125rem;font-weight:800}
+.links{display:none;gap:1.5rem;font-size:.875rem}.links a:hover{color:var(--primary)}
+.btn{display:inline-block;border-radius:999px;padding:.75rem 1.5rem;font-weight:600;transition:transform .3s}
+.btn:hover{transform:translateY(-4px)}
+.btn-sm{padding:.5rem 1rem;font-size:.875rem}.btn-sm:hover{transform:scale(1.05)}
+.hero{display:grid;gap:2.5rem;align-items:center;padding:3.5rem 1.25rem;text-align:center}
+.pill{display:inline-block;border-radius:999px;padding:.25rem 1rem;font-size:.875rem;color:var(--muted-fg)}
+h1{margin-top:1.25rem;font-size:3rem;font-weight:800;line-height:1.25}
+.lead{margin-top:1.25rem;font-size:1.125rem;line-height:2rem;color:var(--muted-fg)}
+.cta{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center}
+.art{position:relative}
+.art .glow{position:absolute;inset:1.5rem;border-radius:3rem;opacity:.4;filter:blur(48px);background:var(--grad)}
+.art img{position:relative;width:100%;height:auto;border-radius:2.5rem;box-shadow:var(--shadow);animation:float 6s ease-in-out infinite;display:block}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+section.block{padding:4rem 1.25rem}
+h2{text-align:center;font-size:1.875rem;font-weight:800}
+.sub{margin-top:.75rem;text-align:center;color:var(--muted-fg)}
+.grid{margin-top:2.5rem;display:grid;gap:1.25rem}
+.svc{border-radius:1.5rem;padding:1.5rem;transition:transform .3s}
+.svc:hover{transform:translateY(-8px)}
+.ico{display:grid;place-items:center;width:3.5rem;height:3.5rem;border-radius:1rem;font-size:1.5rem}
+h3{margin-top:1.25rem;font-size:1.25rem;font-weight:700}
+.svc p{margin-top:.5rem;line-height:1.75rem;color:var(--muted-fg)}
+.works{grid-template-columns:repeat(2,1fr);gap:1rem}
+.work{border-radius:1.5rem;overflow:hidden}
+.thumb{position:relative;aspect-ratio:1;transition:transform .5s}
+.work:hover .thumb{transform:scale(1.05)}
+.tag{position:absolute;right:.75rem;top:.75rem;border-radius:999px;padding:.25rem .75rem;font-size:.75rem;font-weight:600}
+.work p{padding:1rem;font-size:.875rem;font-weight:600;position:relative;background:var(--card)}
+.g1{background:linear-gradient(to bottom right,var(--accent),var(--primary))}
+.g2{background:linear-gradient(to bottom right,var(--primary),var(--secondary))}
+.g3{background:linear-gradient(to bottom right,var(--secondary),var(--accent))}
+.g4{background:linear-gradient(to bottom right,var(--accent),var(--secondary))}
+.g5{background:linear-gradient(to bottom right,var(--primary),var(--accent))}
+.g6{background:linear-gradient(to bottom right,var(--secondary),var(--primary))}
+.contact{max-width:56rem;margin:0 auto;border-radius:2.5rem;padding:2rem;text-align:center}
+.two{margin-top:2rem;display:grid;gap:.75rem}
+.big{border-radius:1rem;padding:1rem 1.5rem;font-weight:700;transition:transform .3s;display:block}
+.big:hover{transform:translateY(-4px)}
+.outline{border:2px solid var(--primary);color:var(--primary)}
+.soon{margin-top:1.5rem;display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}
+.soon div{border-radius:1rem;background:var(--muted);padding:.75rem;font-size:.875rem;color:var(--muted-fg)}
+.soon span{display:block;font-size:.75rem}
+footer{padding-bottom:2rem;text-align:center;font-size:.875rem;color:var(--muted-fg)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media(min-width:640px){.links{display:flex}.grid{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr 1fr}}
+@media(min-width:768px){.hero{grid-template-columns:1fr 1fr;padding:6rem 1.25rem;text-align:right}.cta{justify-content:flex-start}h1{font-size:4.5rem}h2{font-size:2.25rem}.works{grid-template-columns:repeat(3,1fr)}.work p{font-size:1rem}.contact{padding:3rem}}
+@media(min-width:1024px){.svcs{grid-template-columns:repeat(4,1fr)}}
+@media(prefers-reduced-motion:reduce){.art img{animation:none}.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<header><nav class="glass shadow">
+  <a href="#top" class="brand tgrad">تابان ادیت</a>
+  <div class="links"><a href="#services">خدمات</a><a href="#works">نمونه‌ها</a><a href="#contact">ارتباط</a></div>
+  <a href="https://ig.me/m/taban_edit" target="_blank" rel="noopener noreferrer" class="btn btn-sm grad">پیام بده</a>
+</nav></header>
+<main id="top">
+  <section class="hero wrap">
+    <div class="reveal">
+      <span class="pill glass">استودیو طراحی و تدوین ✿</span>
+      <h1>از ایده <span class="tgrad">تا اجرا</span></h1>
+      <p class="lead">طراحی کاور، پروفایل، تدوین ویدیو و محتوای بصری؛ با رنگ، حس و جزئیاتی که پیجت را خاص می‌کند.</p>
+      <div class="cta">
+        <a href="https://www.instagram.com/taban_edit/" target="_blank" rel="noopener noreferrer" class="btn grad shadow">اینستاگرام تابان ادیت</a>
+        <a href="#services" class="btn glass">خدمات</a>
+      </div>
+    </div>
+    <div class="art reveal"><div class="glow"></div><img src="./assets/hero.jpg" width="1024" height="1024" alt="طراح گرافیک کارتونی پشت میز کار"></div>
+  </section>
+
+  <section id="services" class="block wrap">
+    <h2 class="reveal">خدمات <span class="tgrad">تابان</span></h2>
+    <div class="grid svcs">
+      <article class="svc glass shadow reveal"><div class="ico grad">🖼️</div><h3>طراحی کاور و بنر</h3><p>کاور پست، هایلایت و بنرهای چشم‌نواز برای دیده شدن برندت.</p></article>
+      <article class="svc glass shadow reveal" style="transition-delay:90ms"><div class="ico grad">🌸</div><h3>طراحی پروفایل</h3><p>پروفایل یکدست و حرفه‌ای که هویت پیجت را می‌سازد.</p></article>
+      <article class="svc glass shadow reveal" style="transition-delay:180ms"><div class="ico grad">🎬</div><h3>تدوین ویدیو</h3><p>ریلز و ویدیوهای جذاب با ریتم، افکت و زیرنویس دقیق.</p></article>
+      <article class="svc glass shadow reveal" style="transition-delay:270ms"><div class="ico grad">✨</div><h3>تولید محتوای بصری</h3><p>ایده‌پردازی و ساخت محتوای تصویری هماهنگ با سبک تو.</p></article>
+    </div>
+  </section>
+
+  <section id="works" class="block wrap">
+    <h2 class="reveal">نمونه‌کارها</h2>
+    <p class="sub reveal">کارت‌های زیر صرفاً طرح نمایشی هستند؛ نمونه‌های واقعی را در اینستاگرام ببینید.</p>
+    <div class="grid works">
+      <div class="work glass shadow reveal"><div class="thumb g1"><span class="tag glass">طرح نمایشی</span></div><p>کاور هایلایت فروشگاهی</p></div>
+      <div class="work glass shadow reveal"><div class="thumb g2"><span class="tag glass">طرح نمایشی</span></div><p>بنر کمپین تخفیف</p></div>
+      <div class="work glass shadow reveal"><div class="thumb g3"><span class="tag glass">طرح نمایشی</span></div><p>ریلز معرفی محصول</p></div>
+      <div class="work glass shadow reveal"><div class="thumb g4"><span class="tag glass">طرح نمایشی</span></div><p>ست پروفایل برند</p></div>
+      <div class="work glass shadow reveal"><div class="thumb g5"><span class="tag glass">طرح نمایشی</span></div><p>پوستر رویداد</p></div>
+      <div class="work glass shadow reveal"><div class="thumb g6"><span class="tag glass">طرح نمایشی</span></div><p>قالب استوری</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="block">
+    <div class="contact glass shadow reveal">
+      <h2>بیا با هم <span class="tgrad">بسازیم</span></h2>
+      <p class="sub">برای سفارش و مشاوره در اینستاگرام پیام بده.</p>
+      <div class="two">
+        <a href="https://ig.me/m/taban_edit" target="_blank" rel="noopener noreferrer" class="big grad">💌 پیام مستقیم اینستاگرام</a>
+        <a href="https://www.instagram.com/taban_edit/" target="_blank" rel="noopener noreferrer" class="big outline">📸 ‎@taban_edit</a>
+      </div>
+      <div class="soon">
+        <div aria-disabled="true">تلگرام <span>به‌زودی</span></div>
+        <div aria-disabled="true">واتساپ <span>به‌زودی</span></div>
+        <div aria-disabled="true">بله <span>به‌زودی</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>© تابان ادیت — از ایده تا اجرا</footer>
+<script>
+(function(){var els=document.querySelectorAll('.reveal');
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.15});
+els.forEach(function(e){io.observe(e)})})();
+</script>
+</body>
+</html>
